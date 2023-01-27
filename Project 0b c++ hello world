@@ -1,0 +1,20 @@
+                                                       /* project 0b print hello world */
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "Hello World!\n";
+	cout << "This is my start at learning c++\n";
+}
+
+/*
+Hello World!
+This is my start as a successful and happy programmer
+
+C:\Temp\Asonte\helloworldcis06\x64\Debug\ConsoleApplication1.exe (process 2592) exited with code 0.
+Press any key to close this window . . .
+*/
