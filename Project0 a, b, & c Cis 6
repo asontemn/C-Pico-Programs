@@ -1,0 +1,30 @@
+                                                             /*Project 0a print a triangle*/
+
+#include <iostream> 
+
+using namespace std;
+
+using namespace std;
+
+void triangle() {
+    cout << "  *\n ***\n*****\n";
+}
+
+int main() {
+    cout << "Wait for it folks..." << endl;
+    triangle();
+    cout << "That's all folks!" << endl;
+
+}
+
+
+/* output:
+Wait for it folks...
+  *
+ ***
+*****
+That's all folks!
+
+C:\Temp\Asonte\Project0A\x64\Debug\Project0A.exe (process 8932) exited with code 0.
+Press any key to close this window . . .
+*/
