@@ -1,0 +1,10 @@
+                                                               #chpt 1 A using cout
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	cout << "in 1942 the evil Columbus sailed the ocean blue.";
+	return 0;
+}
