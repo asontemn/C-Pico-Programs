@@ -1,0 +1,37 @@
+// Cin practice.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	cout << "############################################################################" << endl;
+	cout << "###                               ANNUAL CONFERENCE                      ###" << endl;
+	cout << "############################################################################" << endl;
+	cout << "### NAME:                                                                ###" << endl;
+	cout << "###                                                                      ###" << endl;
+	cout << "############################################################################" << endl;
+	cout << "### ORGANIZATION :                                                       ###" << endl;
+	cout << "###                                                                      ###" << endl;
+	cout << "############################################################################" << endl;
+
+}
+
+/*
+############################################################################
+###                               ANNUAL CONFERENCE                      ###
+############################################################################
+### NAME:                                                                ###
+###                                                                      ###
+############################################################################
+### ORGANIZATION :                                                       ###
+###                                                                      ###
+############################################################################
+
+C:\Temp\Asonte\Cin practice\x64\Debug\Cin practice.exe (process 4596) exited with code 0.
+Press any key to close this window . . .
+*/
