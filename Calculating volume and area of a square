@@ -1,0 +1,43 @@
+// Cin practice.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <cmath>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    double length;
+    double width;
+    double height;
+    double totalArea, volume;
+
+    //length = 5;
+    //width = 6;
+    //height = 10;
+
+    cout << "enter length: ";
+    cin >> length;
+    cout << "enter width: ";
+    cin >> width;
+    cout << "enter height: ";
+    cin >> height; 
+
+    volume = length * width * height;
+    totalArea = 2 * (length* width + width * height + height * length); 
+    
+    cout << "Volume = " << volume << endl;
+    cout << "Total Area" << totalArea << endl;
+
+
+}
+
+*/ out put =
+
+Volume = 210
+Total Area214
+
+C:\Temp\Asonte\Cin practice\x64\Debug\Cin practice.exe (process 776) exited with code 0.
+Press any key to close this window . . ./*
