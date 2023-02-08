@@ -1,0 +1,50 @@
+// assign1bcis6.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+{
+    float x1, y1, x2, y2;
+    float x_difference, y_difference, sum, distance;
+
+    cout << "Please enter the 1st x-corordinate: ";
+    cin >> x1;
+
+    cout << "Please enter the 1st y-coordinate: ";
+    cin >> y1;
+
+    cout << "Please enter the 2nd x-corordinate: ";
+    cin >> x2;
+
+    cout << "Please enter the 2nd y-coordinate: ";
+    cin >> y2;
+
+
+    x_difference = pow(x1 - x2, 2);
+    y_difference = pow(y1 - y2, 2);
+
+    sum = x_difference + y_difference;
+    distance = sqrt(sum);
+
+    cout << "The distance is: " << distance << endl;
+
+    return 0;
+
+
+/*
+Please enter the 1st x-corordinate: 2
+Please enter the 1st y-coordinate: 3
+Please enter the 2nd x-corordinate: 8
+Please enter the 2nd y-coordinate: -5
+The distance is: 10
+
+C:\Users\asont\OneDrive\Desktop\code\assign1bcis6\x64\Debug\assign1bcis6.exe (process 47796) exited with code 0.
+Press any key to close this window . . .
+
+*/
+
+}
