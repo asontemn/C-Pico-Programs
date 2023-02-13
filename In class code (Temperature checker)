@@ -1,0 +1,42 @@
+// Random in class programs.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+    double temp;
+
+    cout << "enter the temperature";
+    cin >> temp;
+
+    if (temp < 35) {
+        cout << "Too cold" << endl;
+
+
+    }
+    else {
+        if (temp > 60) {
+            cout << "cold" << endl;
+            cout << "need one jacket" << endl;
+        }
+        else {
+            if (temp > 80) {
+                cout << "cold" << endl;
+                cout << "need two jackets" << endl;
+            }
+            else {
+                if (temp < 95) {
+                    cout << "Hot" << endl;
+                    cout << "Need a mini skirt" << endl;
+                }
+                else {
+                    cout << "It's hot af" << endl;
+                    cout << "show some a$$";
+                }
+            }
+        }
+    }
+}
