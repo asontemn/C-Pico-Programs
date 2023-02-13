@@ -1,0 +1,28 @@
+// Random in class programs.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double due, paid, bal;
+
+    cout << "enter amount paid: ";
+    cin >> paid;
+    cout << "enter amount due : ";
+    cin >> due;
+    bal = paid - due;
+    if (bal >= 0) {
+        cout << "balance = " << bal << endl;
+
+    }
+    else {
+        cout << "insufficient funds: " << endl;
+        cout << " you need to pay $ " << bal << endl;
+
+    }
+    cout << "program finished" << endl;
+
+    
+}
