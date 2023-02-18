@@ -1,0 +1,28 @@
+//chapter 4: if statements
+
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+    int x, y;
+    y = 5;
+    cout << "what is y?: ";
+    cin >> y;
+
+
+    if ( y == 100)
+    {
+        x = 1;
+     } 
+
+    else
+    {
+        x = 0;
+    }
+    cout << " x equals: " << x;
+ 
+}
+
+
