@@ -21,3 +21,30 @@ int main()
     }
     cout << endl;
 }
+
+
+// nested loop program prints rectangle w/ user input 10 & 50
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+    int rows, cols;
+    cout << "enter number of rows: ";
+    cin >> rows;
+    cout << "enter number of cols: ";
+    cin >> cols;
+
+    for (int r = 0; r < rows; r++)
+    {
+        for (int c = 0; c < cols; c++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    
+    }
+}
