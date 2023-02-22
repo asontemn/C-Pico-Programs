@@ -1,0 +1,23 @@
+// Random in class programs.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+
+{
+    int counter = 0;
+    int max;
+    cout << "enter number of asterisks: ";
+    cin >> max;
+    while ((max < 1) || (max > 100)) {
+        cout << "Please enter a number between 1 & 100: ";
+        cin >> max;
+    }
+    while (counter <max) {
+        cout << "*";
+        counter = counter + 1;
+    }
+    cout << endl;
+}
