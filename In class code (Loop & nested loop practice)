@@ -36,11 +36,11 @@ int main()
     cout << "enter number of rows: ";
     cin >> rows;
     cout << "enter number of cols: ";
-    cin >> cols;
+    cin >> cols;                         // user inputs 
 
-    for (int r = 0; r < rows; r++)
+    for (int r = 0; r < rows; r++)       // outer loop checks to see if r is less than input, repeats this and inner loop untill its > input
     {
-        for (int c = 0; c < cols; c++)
+        for (int c = 0; c < cols; c++)    // inner loop checks if c is greater than input, repeats untill it is. then restarts if outer loop says so.
         {
             cout << "*";
         }
