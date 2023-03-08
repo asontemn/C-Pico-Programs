@@ -1,0 +1,72 @@
+// tax cal.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+    const double bracket1 = 2000, bracket2 = 10000, bracket3 = 30000, bracket4 = 17500;       
+
+    double income, taxedamnt, afterTax = 0 ;
+
+
+
+    cout << "Please enter income: $ ";
+    cin >> income;
+
+    if (income <= 30000)
+    {
+        taxedamnt = 0;
+        afterTax = income;
+        cout << " Zero deductions for this bracket" << endl;
+    
+    }
+    else if (income >= 30000.01 && income <= 50000)
+    {
+        taxedamnt = (income - 30000) * .10;
+        afterTax = income - taxedamnt;
+
+
+    }
+    else if (income >= 50000.01 && income <= 100000)
+    {
+        taxedamnt = ((income - 50000.00) * .20) + bracket1; 
+        afterTax = (income - taxedamnt);
+
+    }
+    else if (income >= 100000.01 && income <= 200000)
+    {
+        taxedamnt = ((income - 100000) * .30) + bracket1 + bracket2;
+        afterTax = (income - taxedamnt);
+
+    }
+    else if (income >= 200000.01 && income <= 250000)
+    {
+        taxedamnt = ((income - 200000) * .35) + bracket1 + bracket2 + bracket3;        
+        afterTax = (income - taxedamnt);
+
+    }
+    else if (income > 250000)
+    {
+        taxedamnt = ((income - 250000) * .40) + bracket1 + bracket2 + bracket3 + bracket4;        
+        afterTax = (income - taxedamnt);
+
+ 
+    }
+    cout << "Income before tax = " << income << "." << endl;
+    cout << "Income after taxes = " << afterTax << "." << endl;
+    cout << "Your deducted amount is " << taxedamnt << "." << endl;
+}
+
+
+/* Results
+Please enter income: $ 125000
+Income before tax = 125000.
+Income after taxes = 105500.
+Your deducted amount is 19500.
+
+C:\Users\asont\OneDrive\Desktop\code\tax cal\x64\Debug\tax cal.exe (process 130040) exited with code 0.
+Press any key to close this window . . .
+*/
