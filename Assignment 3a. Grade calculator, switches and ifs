@@ -1,0 +1,64 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double points;
+    char grade;
+
+    cout << "Please enter your points: ";
+    cin >> points;
+
+
+    if (points < 60)
+        grade = 'F';
+
+    else if (points < 70)
+        grade = 'D';
+
+    else if (points < 80)
+        grade = 'C';
+
+    else if (points < 90)
+        grade = 'B';
+
+    else
+        grade = 'A';
+
+
+    switch (grade) {
+
+    case 'F':
+        cout << "You got an " << grade << ", Try Harder Next Time" << endl;
+        break;
+
+    case 'D':
+        cout << "You got a " << grade << ", Try Harder Next Time" << endl;
+        break;
+
+    case 'C':
+        cout << "You got a " << grade << ", Good" << endl;
+        break;
+
+    case 'B':
+        cout << "You got a " << grade << ", Very Good" << endl;
+        break;
+
+    case 'A':
+        cout << "You got an " << grade << ", Excellent" << endl;
+        break;
+
+    }
+
+}
+
+
+/* program output:
+
+Please enter your points: 100
+You got an A, Excellent
+
+C:\Users\asont\OneDrive\Desktop\code\Assignment 3b\x64\Debug\Assignment 3b.exe (process 138040) exited with code 0.
+Press any key to close this window . . .
+
+*/
