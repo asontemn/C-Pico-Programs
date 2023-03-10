@@ -1,0 +1,30 @@
+// Assignment 4b number reverse.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+int main()
+
+
+
+{
+        int number, reverse = 0; //define variable 
+        cout << "Enter the number you want to reverse: "; //user input
+        cin >> number;
+
+        while (number != 0) { //iterate till number equals zero
+            reverse = reverse * 10 + number % 10; //divide the remainder
+            number /= 10;
+        }
+
+        cout << "Reversed number is: " << reverse << endl;
+        return 0;
+    }
+
+/* Program output
+
+Enter a number: 74321
+Reversed number: 12347
+
+C:\Users\asont\OneDrive\Desktop\code\Assignment 4b number reverse\x64\Debug\Assignment 4b number reverse.exe (process 149796) exited with code 0.
+Press any key to close this window . . .*/
