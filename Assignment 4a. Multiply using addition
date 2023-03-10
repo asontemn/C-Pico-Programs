@@ -1,0 +1,31 @@
+// ConsoleApplication2.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float x, y, answer = 0;
+
+    cout << "enter two numbers you would like to multiply " << endl; 
+    cin >> x;
+    cin >> y;
+
+    for (int a = 0; a < y; a++) { 
+        answer += x;
+    }
+
+    cout << "The answer to " << x << "*" << y << " equals " << answer;
+
+}
+
+/*
+enter two numbers you would like to multiply
+5
+6
+The answer to 5*6 equals 30
+C:\Users\asont\OneDrive\Desktop\code\ConsoleApplication2\x64\Debug\ConsoleApplication2.exe (process 138156) exited with code 0.
+Press any key to close this window . . .
+
+*/
