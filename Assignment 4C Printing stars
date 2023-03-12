@@ -1,0 +1,47 @@
+// Assignment 4c foreal reverse.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std; //library for inputoutput
+
+int main()
+{
+    int n = 1; //define and initialize variable
+
+    while (n <= 6) { // loop untill n = 7
+
+        for (int i = 0; i < pow(2, n - 1); i++) { // loop from 0 to 2^(n-1) - 1
+            cout << "*"; 
+        }
+        cout << endl;
+        n++; // add to n after eachloop
+    }
+
+    n = 5; // reset n to 5
+
+    while (n >= 1) { // print second half
+
+        for (int i = 0; i < pow(2, n - 1); i++) { 
+            cout << "*"; 
+        }
+        cout << endl; 
+        n--; // remove a n after eachloop
+    }
+}
+
+/* program output
+*
+**
+****
+********
+****************
+********************************
+****************
+********
+****
+**
+*
+
+C:\Users\asont\OneDrive\Desktop\code\Assignment 4c foreal reverse\x64\Debug\Assignment 4c foreal reverse.exe (process 139048) exited with code 0.
+Press any key to close this window . . .
+*/
