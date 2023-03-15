@@ -1,0 +1,96 @@
+// Arrays example 1.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+#include <cstdlib>
+#include <ctime>
+
+const int N = 10;
+
+
+int main()
+{
+    int x[10]; //Declare X as an int array with ten spaces or little boxes on the hillside
+    int sum = 0, min, max, ave;
+    int y[N];
+    int z[N] = { 1,2,3,4,5,6,7,8,9,10 };
+
+    srand(time(0));
+    
+    for (int i = 0; i < N; i++)
+    {
+        cout << "Enter grade for x[" << i + 1 << "]: " << endl;
+        x[i] = rand() % 100; //declare i as array index
+    }
+
+    for (int i = 0; i < N; i++)
+    {
+        cout << "Enter grade for x[" << i + 1 << "]: " << x[i] << endl;
+      
+    }
+
+    for (int i = 0; i < N; i++)
+    {
+        sum = sum + x[i];
+
+    }
+
+    cout << "Sum = " << sum << endl;
+    min = x[0], max = x[0];
+
+    for (int i = 1; i < N; i++) // average array o
+    {
+        if (x[i] > max)
+            max = x[i];
+        if (x[i] < min)
+            min = x[i];
+    }
+    cout << "max: " << max << endl;
+    cout << "Min: " << min << endl;
+
+    ave = sum / 10;
+    cout << "Average: " << ave << endl;
+
+    for (int i = 0; i < N; i++) //swap array content
+    {
+        int temp = x[i];
+        x[i] = z[i];
+        z[i] = temp;
+    }
+    // search an array
+    int s;
+    cout << "Enter search value : ";
+    cin >> s;
+
+    int index = -1; 
+
+    for (int i = 0; i < N; i++)
+    {
+        if (y[i] == s)
+            index = i;
+
+            cout << "search is:" << s;
+    
+    }
+    cout << s << endl;
+
+    // counting numbers
+    cin.ignore();
+    string s1;
+    cout << "enter long";
+    cin >> s1;
+
+    for (int i = 0; i < s1.length(); i++)
+    {
+        char ch = s1[i];
+        int temp = ch - 48;
+        z[temp]++;
+
+
+
+    }
+
+
+
+}
