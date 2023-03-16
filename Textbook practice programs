@@ -59,3 +59,39 @@ void displayValue(int num)
  I am passing 5 to displayValue.
 The value is 5
  Now I am back in main. */
+ 
+ //input multiple values to a function
+ 
+  // This program demonstrates a function with three parameters.
+2 #include <iostream>
+ 3 using namespace std;
+ 4
+ 5 // Function Prototype
+ 6 void showSum(int, int, int);
+ 7
+ 8 int main()
+ 9 {
+ 10 int value1, value2, value3;
+ 11
+ 12 // Get three integers.
+ 13 cout << "Enter three integers and I will display ";
+ 14 cout << "their sum: ";
+ 15 cin >> value1 >> value2 >> value3;
+ 16
+ 17 // Call showSum passing three arguments.
+ 18 showSum(value1, value2, value3);
+ 19 return 0;
+ 20 }
+ 21
+ 22 //************************************************************
+ 23 // Definition of function showSum. *
+ 24 // It uses three integer parameters. Their sum is displayed. *
+ 25 //************************************************************
+ 26
+ 27 void showSum(int num1, int num2, int num3)
+ 28 {
+ 29 cout << (num1 + num2 + num3) << endl;
+ 30 }
+Program Output with Example Input Shown in Bold
+ Enter three integers and I will display their sum: 4 8 7 [Enter]
+ 19 
