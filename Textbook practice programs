@@ -26,3 +26,36 @@ int main()
 }
 
 
+
+// chapter 6 functions
+//using perameters to pass values example 6.6:
+
+ 8 int main()
+ 9 {
+ 10 cout << "I am passing 5 to displayValue.\n";
+ 11 displayValue(5); // Call displayValue with argument 5
+ 12 cout << "Now I am back in main.\n";
+ 13 return 0;
+ 14 }
+ 15
+(program continues)
+
+displayValue(5);
+void displayValue(int num)
+{
+ cout << "The value is " << num << endl;
+}
+
+ 17 // Definition of function displayValue. *
+ 18 // It uses an integer parameter whose value is displayed. *
+ 19
+ 20
+ 21 void displayValue(int num)
+ 22 {
+ 23 cout << "The value is " << num << endl;
+ 24 }
+ 
+/* Program Output
+ I am passing 5 to displayValue.
+The value is 5
+ Now I am back in main. */
