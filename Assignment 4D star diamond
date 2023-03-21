@@ -1,0 +1,56 @@
+// Assignment 4D diamond 4th try.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+void displaystars(int stars, int spaces);
+
+
+int main()
+{
+    displaystars(3,32);
+    cout << endl;
+
+    displaystars(5, 31);
+    cout << endl;
+
+    displaystars(9, 29);
+    cout << endl;
+
+    displaystars(17, 25);
+    cout << endl;
+
+    displaystars(33, 17);
+    cout << endl;
+
+    displaystars(65, 1);
+    cout << endl; //first half
+
+
+    displaystars(33, 17);
+    cout << endl;
+
+    displaystars(17, 25);
+    cout << endl;
+
+    displaystars(9, 29);
+    cout << endl;
+
+    displaystars(5, 31);
+    cout << endl;
+
+    displaystars(3, 32);
+    cout << endl; // second half a little impracticle but this is the only way my brain could come up with for now
+}
+
+void displaystars(int stars, int spaces) {
+    
+    for (int k = spaces - 1; k > 0; k--) // k is number of spaces. This inner loop will go untill # spaces is 0
+            cout << " ";
+
+        for (int s = stars - 1; s > 0; s--) // # of stars loop go's till stars are zero
+            cout << "*";
+
+    
+    
+}
