@@ -94,3 +94,66 @@ int main()
 
 
 }
+
+
+
+
+
+//arrays day 2
+
+
+
+// array practice.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+void printArray(int[], int); //prototype for function that prints array
+void copyArray(int[], int);
+void printArray2D(int[][3], int); //always specify colloms for 2d arays
+
+int main()
+{
+    int x[5] = { 10 ,20 ,30 ,40 ,50 }; //array with 5 empty boxes. we put 10,20,30,40,50 in the boxes (defined the array)
+    int x1[5];
+   
+    
+    int y[][3] = { {10,20,30}, // example of 2d array use double brackets 
+                {40,50,60} };
+
+    printArray(x, 10); //calling function that prints array
+    printArray2D(y, 2);
+ 
+
+    
+}
+
+void printArray(int arr[], int n) { //function that prints array kinda dk how this works...
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
+
+}
+
+void copyArray(int src[], int dest[], int n) {
+    for (int i = 0; i < n; i++)
+    {
+        dest[i] = src[i];
+ 
+    }
+
+}
+
+void printArray2D(int arr[][3], int n) {
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cout << "Idk what this means" << endl;
+        }
+        
+
+    }
+}
