@@ -1,0 +1,29 @@
+// Assignment 5B fibanocci.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//ideation: input formulas??? idk I gotta youtube this one.. okay so define two int vars numbers 0 and 1. Then define var for
+// new number that is the sum of the pevious two then define a second var as the third num... 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number, fib1 = 0, fib2 = 1, fibprev, nacci, fibnext, countup;
+
+    cout << "How many fibs would you like me to print?: ";
+    cin >> number; //how many of the fib series we will display
+
+    for (int countup = 1; countup <= number; countup++) { // will loop x times to get x amount of fin #s
+        cout << fib1 << " "; //print all the nums starting w zero BUT FIB1 changes each loop
+        fibnext = fib1 + fib2;
+        fib1 = fib2;
+        fib2 = fibnext;
+    }
+
+
+}
+
+/* How many fibs would you like me to print?: 20
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181
+C:\Users\asont\OneDrive\Desktop\code\Assignment 5B fibanocci\x64\Debug\Assignment 5B fibanocci.exe (process 38864) exited with code 0.
+Press any key to close this window . . .
+*/
