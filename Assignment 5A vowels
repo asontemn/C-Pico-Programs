@@ -1,0 +1,48 @@
+// Assignment 5a vowels and constants.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+using namespace std;
+
+//disregard the comments, this was me ideating the code before writting and correcting. Kinda funny how none of these ideas really made the final cut.
+//this program will use a function to identify the vowels. if not vowel assume constane.
+//this function will also add ++ to the vowels or constants list
+// this program will use global so all functions can use them varriables. userword for input. Vowels to have a list of vowels shoould this be an array?
+//next call the function with the  userword as the argument
+
+
+int main()
+{
+
+	string userword;
+	int vowelNum=0, constantNum=0;
+
+	//first collect the info
+	cout << "Give me a word, and I will give you the number of vowels and constants: " << endl;
+	cin >> userword;
+
+
+	for (int i = 0; i < userword.length(); i++) {
+		if (userword[i] == 'a' || userword[i] == 'e' || userword[i] == 'i' || userword[i] == 'o' || userword[i] == 'u' || userword[i] == 'y'
+			|| userword[i] == 'A' || userword[i] == 'E' || userword[i] == 'I' || userword[i] == 'O' || userword[i] == 'U' || userword[i] == 'Y'){
+			vowelNum++; // Increment vowel count
+		}
+
+		else {
+			constantNum++; // Increment consonant count
+		}
+	}
+	
+	cout << "Number of vowels: " << vowelNum << endl;
+		cout << "Number of consonants: " << constantNum << endl;
+
+
+}
+
+/* Give me a word, and I will give you the number of vowels and constants:
+Inuyasha
+Number of vowels: 5
+Number of consonants: 3
+
+C:\Users\asont\OneDrive\Desktop\code\Assignment 5a vowels and constants\x64\Debug\Assignment 5a vowels and constants.exe (process 1292) exited with code 0.
+Press any key to close this window . . .*/
