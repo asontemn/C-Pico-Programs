@@ -1,0 +1,48 @@
+// Assignment 5C Mortage.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Prepro ideation please ignore...okay so. what imma have to do is... define the interest rate. Define how long a term is, use doubles for mort. and prin. ect and set decimal points to two
+// then ill ask the user for their input. Then i'll call a function that uses those inputs and the given formula to calculate the outputs
+
+#include <iostream>
+using namespace std;
+#include <cmath>
+
+
+double MonthlyPaymentCal(double principle, double interestRate, double months, double years) {
+
+    double numerator = (principle * (interestRate / months) * pow((1 + interestRate / months), (months * years)));
+
+    double denominator = (pow((1 + interestRate / months), (months * years))) - 1;
+    // given equation above
+    return(numerator / denominator);
+}
+
+
+
+double costoftotmortcal(double monthlyPayments, double months, double years) {
+    return monthlyPayments * (months * years);
+}
+
+
+
+int main()
+{
+    double interestRate, terms, mortage, principle, monthlyPayments, months = 12;
+
+    cout << "What is your principle amount? : " << endl;
+    cin >> principle;
+
+    cout << "What is your interest rate? : " << endl;
+    cin >> interestRate;
+
+    cout << "How many terms (years) is your mortage? : " << endl;
+    cin >> terms;
+
+    monthlyPayments = MonthlyPaymentCal(principle, interestRate, months, terms);
+    cout << "Monthly Payments: $" << monthlyPayments << "\n";
+    cout << "Total Cost of Mortgage: $" << costoftotmortcal(monthlyPayments, months, terms) << "\n";
+    return 0;
+
+}
+
+
+// function to calculate monthly payments
